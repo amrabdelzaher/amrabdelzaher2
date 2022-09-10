@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Procedural Canvas cityscape (profile header)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./web/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Lost like non-janky frames in the rain... -->
+<div>
+  	<header>
+		<a href="home.html" class="logo"><img src="web/logo.png"></a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="home.html">Home</a></li>
+			<li><a href="web/about.html">About Me</a></li>
+			<li><a href="web/services.html">Services</a></li>
+			<li><a href="web/portfolio.html">My Portfolio</a></li>
+			<li><a href="web/contact.html">Contact</a></li>
+		</ul>
+	</header>
+
+</div>
+<div>
+  	<section class="home" id="home">
+		<div class="home-text">
+	    <div class="clock">
+       <div class="display">
+       </div>
+      </div>
+<script>
+      setInterval(function(){
+        const clock = document.querySelector(".display");
+        let time = new Date();
+        let sec = time.getSeconds();
+        let min = time.getMinutes();
+        let hr = time.getHours();
+        let day = 'AM';
+        if(hr > 12){
+          day = 'PM';
+          hr = hr - 12;
+        }
+        if(hr == 0){
+          hr = 12;
+        }
+        if(sec < 10){
+          sec = '0' + sec;
+        }
+        if(min < 10){
+          min = '0' + min;
+        }
+        if(hr < 10){
+          hr = '0' + hr;
+        }
+        clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+      });
+    </script>
+
+			<h4>Hello</h4>
+			<h1>I'M AMR <br> Abd<span>elzaher</span></h1>
+			<h3>Front-End Developer</h3>
+			<a href="contact.html" class="btn">Hire Me</a>
+		</div>
+	</section>
+
+</div>
+<div id="vignette"></div>
+<!-- partial -->
+  <script  src="web/toon.js"></script>
+	<script type="text/javascript" src="web/script.js"></script>
+
+
+</body>
+</html>

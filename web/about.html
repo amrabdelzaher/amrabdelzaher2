@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Amr Abdelzaher About</title>
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+  	<!---header--->
+	<header>
+		<a href="../home.html" class="logo"><img src="logo.png"></a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="../home.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="portfolio.html">My Portfolio</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+
+
+	</header>
+
+	<!---about--->
+	<section class="about" id="about">
+		<div class="about-img">
+			<img src="about.png">
+		</div>
+
+		<div class="about-text">
+		  	    <div class="clock">
+      <div class="display">
+</div>
+</div>
+<script>
+      setInterval(function(){
+        const clock = document.querySelector(".display");
+        let time = new Date();
+        let sec = time.getSeconds();
+        let min = time.getMinutes();
+        let hr = time.getHours();
+        let day = 'AM';
+        if(hr > 12){
+          day = 'PM';
+          hr = hr - 12;
+        }
+        if(hr == 0){
+          hr = 12;
+        }
+        if(sec < 10){
+          sec = '0' + sec;
+        }
+        if(min < 10){
+          min = '0' + min;
+        }
+        if(hr < 10){
+          hr = '0' + hr;
+        }
+        clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+      });
+    </script>
+			<h2>About Me</h2>
+			<h4>Hi,I started learning programming in 2018 I dig deep into it </h4>
+			<p>I have many specialties such as script automation, Website interface design,Creating mobile applications I also have some fields outside of programming like the Graphics design, video editing.</p>
+			<div class="about-gri">
+				<div class="about-in">
+					<h5>1. Problem Solving</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>2. Creative Idea</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>3. Search a lot</h5>
+				</div>
+
+				<div class="about-in">
+					<h5>4. High Quality</h5>
+				</div>
+
+			</div>
+			<a href="https://api.whatsapp.com/send?phone=201022495924&text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%88%D8%B1%D8%AD%D9%85%D8%A9%20%D8%A7%D9%84%D9%84%D9%87%20%D9%88%D8%A8%D8%B1%D9%83%D8%A7%D8%AA%D9%87" class="btn">Contact Me</a>
+		</div>
+	</section>
+	<!---custom js link--->
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>

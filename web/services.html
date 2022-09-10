@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Amr Abdelzaher Services</title>
+	<!---custom css link--->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+  <title></title>
+</head>
+
+<body>
+    	<!---header--->
+	<header>
+		<a href="../home.html" class="logo"><img src="logo.png"></a>
+		<div class="bx bx-menu" id="menu-icon"></div>
+
+		<ul class="navbar">
+			<li><a href="../home.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="services.html">Services</a></li>
+			<li><a href="portfolio.html">My Portfolio</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</header>
+
+	<!---services--->
+	<section class="services" id="services">
+		<div class="main-text">
+		<div style="text-align: center" class="clock">
+    <div class="display">
+   </div>
+   </div>
+<script>
+      setInterval(function(){
+        const clock = document.querySelector(".display");
+        let time = new Date();
+        let sec = time.getSeconds();
+        let min = time.getMinutes();
+        let hr = time.getHours();
+        let day = 'AM';
+        if(hr > 12){
+          day = 'PM';
+          hr = hr - 12;
+        }
+        if(hr == 0){
+          hr = 12;
+        }
+        if(sec < 10){
+          sec = '0' + sec;
+        }
+        if(min < 10){
+          min = '0' + min;
+        }
+        if(hr < 10){
+          hr = '0' + hr;
+        }
+        clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+      });
+    </script>
+			<h2>My Services</h2>
+			<h4>Better Design, Better Expericences</h4>
+		</div>
+
+		<div class="services-content">
+			<div class="box">
+				<img src="serv1.png">
+				<h3>Mobile App Design</h3>
+				<p>I will create a flawless design that is unique, fashionable and of high quality.</p>
+			</div>
+
+			<div class="box">
+				<img src="serv2.png">
+				<h3>Website Design</h3>
+				<p>I will create a flawless design that is unique, fashionable and of high quality.</p>
+			</div>
+
+			<div class="box">
+				<img src="serv3.png">
+				<h3>Video Editing</h3>
+				<p>I will create a flawless design that is unique, fashionable and of high quality.</p>
+			</div>
+			<div class="box">
+				<img class="pho" src="design.png">
+				<h3>Graphics Design</h3>
+				<p>I will create a flawless design that is unique, fashionable and of high quality.</p>
+			</div>
+
+		</div>
+	</section>
+		<!---custom js link--->
+	<script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
